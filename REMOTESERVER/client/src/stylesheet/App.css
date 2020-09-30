@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+h1 {
+    font: 400 3em 'Lato';
+}
+
+p {
+    font: 400 1em 'Lato';
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+
+    font: 100 1em/1.5em 'Lato';
+    font: Ultra-Light 100 1em/1.5em 'Lato';
+    font: Ultra-Light 100 1em/1.5em 'Lato', sans-serif;
+    font-family: "Lato Hairline", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    display: inline;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.login-spacer {
+    min-height: 300px;
+    height: 50vh; /*- 75px);*/
+}
+
+#login-box {
+    position: relative;
+
+    background: #fafafa;
+    box-shadow: 0px 10px 27px 0px rgba(0, 0, 0, 0.34);
+    border-radius: 10px;
+
+    max-width: 550px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: black !important;
+    align-items: center;
+    text-align: center;
+    display: grid;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translateY(-50%);
+}
+
+#login-tint {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+#login-background {
+    z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#login-logo {
+    width: 80%;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+}
+
+.log-object {
+    border: black 1px solid;
+    margin: 4px;
+    padding: 4px;
+    width: 100vw;
+    max-width: 500px;
+}
+
+#camera-viewers-panel {
+    margin-top: 20px;
+
+    height: 280px;
+}
+
+#sensors-panel {
+    margin-bottom: 20px;
+
+
+    height: 320px;
+}
+
+.dashboard-panel {
+
+    border: black solid 1px;
+
+    width: 300px;
+
+    display: block;
+    left: 0;
+    right: 0;
+
+    color: black;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+
+    float: left;
+}
+
+.sensor-object {
+
+    border: black solid 1px;
+
+    margin: 0;
+
+    margin-bottom: 4px;
+
+    padding: 4px;
+
+}
+
+.sensor-open {
+    background-image: linear-gradient(to right, red, darkred);
+    color: white !important;
+}
+
+#camera-holder {
+    max-width: 1100px;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#camera-feed {
+  border: solid black 3px;
+
+  width: 100%;
+  height: auto;
+
+  max-width: 800px;
+  max-height: 600px;
+
+  background: black;
+
+  display: block;
+  left: 0;
+  right: 0;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.control-button {
+  min-width: 100px;
+
+  font: 400 0.5em 'Lato' !important;
+
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  border-radius: 7px;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  transition: background-color 0.3s;
+
+}
+.control-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+.control-button:active {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.login-button {
+  width: 80%;
+
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.hamburger-inner {
+    background-color: white !important;
+}
+
+.hamburger-inner:after {
+    background-color: white !important;
+}
+
+.hamburger-inner:before {
+    background-color: white !important;
+}
+
+#navham {
+    position: absolute;
+    left: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+    .hide-widescreen-ui {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .show-smol-ui {
+        display: none !important;
+    }
+}

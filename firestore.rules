@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /logs/{logID} {
+
+      allow read: if isViewer();
+      allow list: if isViewer();
+      allow get: if isViewer();
+
+      function isViewer() {
+        return request.auth.uid in get(/databases/$(database)/documents/authentication/authorizedUsers).data.viewer;
+      }
+    }
+
+    match /settings/{settingID} {
+
+      allow read: if isViewer();
+      allow list: if isViewer();
+      allow get: if isViewer();
+
+      function isViewer() {
+        return request.auth.uid in get(/databases/$(database)/documents/authentication/authorizedUsers).data.viewer;
+      }
+    }
+  }
+}

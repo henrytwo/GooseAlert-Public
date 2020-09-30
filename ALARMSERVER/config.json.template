@@ -1,0 +1,10 @@
+{
+  "rsync_remote_user": "",
+  "SMTP_PASSWORD": "",
+  "SMTP_USERNAME" : "",
+  "SMTP_CONTACT" : "",
+  "SMTP_ADDRESS" : "",
+  "SMTP_RECIPIENT" : "",
+  "SMTP_PORT" : "",
+  "PC_ADDRESS": ""
+}
